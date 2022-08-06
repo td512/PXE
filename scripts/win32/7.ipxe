@@ -1,0 +1,6 @@
+#!ipxe
+
+imgfree
+kernel ${protocol}${server}${port}/memdisk iso raw
+initrd ${win32-repo}pe/WinPE7.iso
+boot
